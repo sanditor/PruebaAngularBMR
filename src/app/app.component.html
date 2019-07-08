@@ -1,21 +1,428 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- HEADER -->
+<header class="main-header">
+  <!-- NAVIGATION -->
+  <div style="float: right;position: absolute;margin-left: 83%;">
+    <i class="fas fa-phone telefono"></i>
+    <h5 style=" color: yellow">936.760.7800</h5>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark navfondo">
+    <div class="container">
+      <a class="navbar-brand mb-0" href="/">
+        <img
+          class=""
+          src="../assets/img/logo.png"
+          style=" width: 11%; position: absolute; margin-top: -4%; margin-left: 8%;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto p-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AGENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR LISTINGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BUY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SALE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FINANCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MEGASHOOPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="background-overlay text-white"
+    style="margin-top: 25%;padding-bottom: 2%;"
+  >
+    <h4 class="text-center p-3">PROPERTY SEARCH</h4>
+
+    <!-- Navegación central header -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav2"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <ul class="nav justify-content-center py-3 m-3 bordeado">
+            <li class="nav-item dropdown" style="width: 17%;">
+              <a
+                class="nav-link dropdown-toggle  menucentro"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Property Tipe</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown" style="width: 17%;">
+              <a
+                class="nav-link dropdown-toggle  menucentro"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >City</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  menucentro" href="#">Property type</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">City</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">Batch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  menucentro" href="#">Max Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">Min Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">SEARCH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menucentro" href="#">Advanced</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- SERVICES -->
+
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h3>Finance your</h3>
+            <p>
+              Amet alias a ipsa tempora ullam asperiores aperiam rem?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body bg-warning">
+            <h3>The Secret</h3>
+            <p>
+              Amet alias a ipsa tempora ullam asperiores aperiam rem?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h3>What is</h3>
+            <p>
+              Amet alias a ipsa tempora ullam asperiores
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h3>New</h3>
+            <p>
+              Amet alias a ipsa tempora ullam asperiores aperiam rem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="text-center team bg-secondary">
+  <div class="container">
+    <h1 class="text-center text-white p-3">FEATURED NEIGHBORDHOODS</h1>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card bg-transparent m-3" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa1.jpg" class="card-img-top" />
+            <p>
+              THE WOOLANDS
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card bg-transparent m-3" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa2.jpg" class="card-img-top" />
+            <p>
+              SPRING
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card bg-transparent m-3" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa3.jpg" class="card-img-top" />
+            <p>
+              MONTGOMERY
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card bg-transparent m-3" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa4.jpg" class="card-img-top" />
+            <p>
+              LAKE CONROE
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card bg-transparent" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa5.jpg" class="card-img-top" />
+            <p>
+              KINGWOOD
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card bg-transparent" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa6.jpg" class="card-img-top" />
+            <p>
+              WILLIS
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card bg-transparent" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa7.jpg" class="card-img-top" />
+            <p>
+              CONROE
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card bg-transparent" style="border: 0;width:18rem;">
+          <div class="card-body">
+            <img src="../assets/img/casa8.jpg" class="card-img-top" />
+            <p>
+              MAGNOLIA
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROPERTY -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h1 class="text-center py-3">FEATURED NEIGHBORDHOODS</h1>
+    <div class="row">
+      <div class="offset-md-2 col-lg-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/img/casa9.jpg" class="card-img" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body bg-light">
+                <h5 class="card-title"><b>$1,340.230</b></h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offset-md-1 col-lg-4">
+        <div class="card mb-3 " style="max-width: 540px; height: 100%;">
+          <div class="row no-gutters">
+            <div class="col-md-4 ">
+              <img src="../assets/img/casa10.jpg" class="card-img " alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body bg-dark text-white">
+                <h5 class="card-title"><b>$1,340.230</b></h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTTER -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-md-1 col-lg-5 right-border">
+        <div class="footer-about">
+          <h2 class="footer-title">Acerca de Nosotros</h2>
+          <p class="text-justify">
+            Yasy- Desarrollo de Software y Soporte Técnico es una empresa
+            especialista en dar solución a una gama de servicios informáticos,
+            tecnológicos en desarrollo dinámico de software web y de escritorio;
+            reparación y mantenimiento de equipo de cómputo y dispositivos
+            periféricos hacia las pymes (pequeñas y medianas empresas). Nuestro
+            pensamiento está diseñado a la altura, la necesidad y las exigencias
+            de hoy. Trabajamos con un grupo de profesionales altamente
+            calificados para atender los requerimientos de nuestros clientes,
+            para lo cual contamos con la infraestructura, tecnología y logística
+            que garantiza el cumplimiento oportuno y la calidad en la ejecución
+            de nuestros servicios.
+          </p>
+        </div>
+      </div>
+      <div class="offset-md-1 col-lg-5">
+        <div class="contact-info">
+          <h2 class="footer-title">Información de Contacto</h2>
+          <div class="single">
+            <img alt="" src="../assets/img/home.png" height="20px" />
+            <p>
+              Sena-CENIGRAF<br />
+              Bogota D.C., Colombia
+            </p>
+          </div>
+          <div class="single">
+            <img alt="" src="../assets/img/phone.png" height="20px" />
+            <p>+057-312 4769266</p>
+          </div>
+
+          <div class="single">
+            <img alt="" src="../assets/img/email.png" height="20px" />
+            <p>info@Softrans.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center py-3" style="background:#e0e004b3;">
+      <div class="col-lg-12">
+        <p>
+          Copyrights &copy; 2017 <a href="#" title="">SofTrans</a>. Todos los
+          derechos reservados.
+        </p>
+        <p>
+          Desarrollado por :
+          <a href="#" title=""
+            >YASY SOFTWARE: DESARROLLO DE SOFTWARE Y SOPORTE TECNICO</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- <footer>
+  <div class="background-overlay text-white main-footer py-5">
+    <div class="container-floyd">
+      <div class="row">
+        <div class="offset-md-1 col-lg-4"></div>
+        <div class="offset-md-1  col-lg-4"></div>
+      </div>
+    </div>
+  </div>
+<div class="down-footer">
+    <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p>Copyright &copy; 2018</p>
+          </div>
+        </div>
+      </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+</footer> -->
 
 <router-outlet></router-outlet>
